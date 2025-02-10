@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class='block-1'></div>
+    <div class='block-2'></div>
+    <div class='block-3'></div>
+    <div class='block-4'></div>
+    <div class='circle'></div>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+
+        .block-1,
+        .block-2,
+        .block-3,
+        .block-4,
+        .circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 150px;
+            width: 65px;
+            background: #fff;
+        }
+
+        .block-1 {
+            left: 0;
+            transform: translate(0, -50%);
+            width: 100%;
+            background: #328FC1;
+        }
+
+        .block-2 {
+            left: 84%;
+            transform: translate(0, -50%);
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        .block-3 {
+            left: 0;
+            transform: translate(0, -50%);
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+        .block-4 {
+            transform: translate(-50%, -50%);
+            width: 190px;
+        }
+
+        .circle {
+
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #328FC1;
+        }
+    </style>
+</body>
+
+</html>
